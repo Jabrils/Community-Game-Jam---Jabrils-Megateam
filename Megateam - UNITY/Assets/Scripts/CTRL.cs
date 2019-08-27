@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CTRL : MonoBehaviour
 {
-    GameObject player;
+    GameObject player, chatbox;
     Rigidbody playerRB;
     Vector3 camOffset;
+    public static Dialogue[] currentDialogue;
 
     Camera mainCam;
     List<GameObject> billboard = new List<GameObject>();
@@ -19,6 +20,13 @@ public class CTRL : MonoBehaviour
 
         // Get ref to our player
         player = GameObject.FindGameObjectWithTag("Player");
+
+        // 
+        chatbox = GameObject.Find("Chatting");
+        chatbox.SetActive(false);
+
+        // 
+        DialogueSystem.Init(chatbox);
 
         // Get ref to our player's rigidbody
         playerRB = player.GetComponent<Rigidbody>();
@@ -40,7 +48,7 @@ public class CTRL : MonoBehaviour
 
         PlayerControls();
 
-        mainCam.transform.position = player.transform.position + camOffset;
+        //mainCam.transform.position = player.transform.localPosition + camOffset;
     }
 
     void PlayerControls()
@@ -51,14 +59,24 @@ public class CTRL : MonoBehaviour
         // get a ref to movement, using the player's directions right & forward, but the inverse of that since the player is facing the inverse direction of the camera by looking at it, then scale that by the horizontal & vertical inputs, as well as speed & deltatime
         Vector3 move = (-player.transform.right * Input.GetAxis("Horizontal") - player.transform.forward * Input.GetAxis("Vertical")) * Time.deltaTime * spd; ;
 
-        // Move our player's rigidbody
-        playerRB.MovePosition(playerRB.position + move);
-
-        // Press jump to make our player jump
-        if (Input.GetButtonDown("Jump"))
+        // If we aren't chatting
+        if (DialogueSystem.state == DialogueSystem.State.Finished)
         {
-            playerRB.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            // Move our player's rigidbody
+            playerRB.MovePosition(playerRB.position + move);
+
+            // Press jump to make our player jump
+            if (Input.GetButtonDown("Jump"))
+            {
+                playerRB.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            }
         }
+
+        if (currentDialogue != null && Input.GetKeyDown(KeyCode.Z))
+        {
+            DialogueSystem.Chat(currentDialogue);
+        }
+
     }
 
     void GetAllBillBoardObjects()
