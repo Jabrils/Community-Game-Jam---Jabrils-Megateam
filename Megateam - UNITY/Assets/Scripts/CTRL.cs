@@ -73,24 +73,26 @@ public class CTRL : MonoBehaviour
         }
 
         // 
-        if (Input.GetKeyDown(KeyCode.Z) && currentDialogue.willTalk)
+        if(currentDialogue != null)
         {
-            int which = -1;
-
-            for (int i = 0; i < currentDialogue.convo.Length; i++)
+            if (Input.GetKeyDown(KeyCode.Z) && currentDialogue.willTalk)
             {
-                if (currentDialogue.convo[i].match == currentDialogue.progress)
+                int which = -1;
+
+                for (int i = 0; i < currentDialogue.convo.Length; i++)
                 {
-                    which = i;
+                    if (currentDialogue.convo[i].match == currentDialogue.progress)
+                    {
+                        which = i;
+                    }
+                }
+
+                if (which >= 0)
+                {
+                    DialogueSystem.Chat(currentDialogue.convo[which].lines, currentDialogue.convo[which].action);
                 }
             }
-
-            if (which >= 0)
-            {
-                DialogueSystem.Chat(currentDialogue.convo[which].lines, currentDialogue.convo[which].action);
-            }
         }
-
     }
 
     void GetAllBillBoardObjects()
