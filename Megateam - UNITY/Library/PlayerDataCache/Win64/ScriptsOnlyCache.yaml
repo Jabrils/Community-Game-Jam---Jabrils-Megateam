@@ -2,7 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CTRL
+    - CamCTRL
+    - NPC
     - Talker
+    - photo
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.AutoExposure
@@ -76,43 +79,49 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9312}
+      Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9354}
+      Script: {instanceID: 9376}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9468}
     - Class: 114
-      Script: {instanceID: 9610}
+      Script: {instanceID: 9632}
     - Class: 114
-      Script: {instanceID: 9616}
+      Script: {instanceID: 9638}
     - Class: 114
-      Script: {instanceID: 9622}
+      Script: {instanceID: 9644}
     - Class: 114
-      Script: {instanceID: 9630}
+      Script: {instanceID: 9652}
     - Class: 114
-      Script: {instanceID: 9666}
+      Script: {instanceID: 9688}
     - Class: 114
-      Script: {instanceID: 9892}
+      Script: {instanceID: 9912}
     - Class: 114
-      Script: {instanceID: 9930}
+      Script: {instanceID: 9950}
     - Class: 114
-      Script: {instanceID: 10286}
+      Script: {instanceID: 10086}
     - Class: 114
-      Script: {instanceID: 10638}
+      Script: {instanceID: 10310}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 10614}
     - Class: 114
-      Script: {instanceID: 10994}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 11226}
+      Script: {instanceID: 11008}
     - Class: 114
-      Script: {instanceID: 11414}
+      Script: {instanceID: 11022}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11442}
     - Class: 114
-      Script: {instanceID: 23912}
+      Script: {instanceID: 11646}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
+      Script: {instanceID: 17894}
+    - Class: 114
+      Script: {instanceID: 18454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -642,6 +651,18 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: dd36a2452992f31c553538498aa0a37f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fade
+  - hash:
+      serializedVersion: 2
+      Hash: 118c16b9dfef8f202200adb74fbc6702
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC
+  - hash:
+      serializedVersion: 2
       Hash: 780e8f682b3221346c034a6712a0fd25
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -718,6 +739,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: df84854bc30795fda83c6ed850b9f190
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Talker
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -936,22 +963,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: dd36a2452992f31c553538498aa0a37f
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Fade
+    className: photo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: NPC
-  - hash:
-      serializedVersion: 2
-      Hash: df84854bc30795fda83c6ed850b9f190
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Talker
+    className: CamCTRL
   platform: 19
   scenePathNames:
   - Assets/Scenes/main.unity

@@ -53,7 +53,6 @@ public static class DialogueSystem
         {
             location = 0;
             state = State.End;
-            Debug.Log(state);
         }
 
 
