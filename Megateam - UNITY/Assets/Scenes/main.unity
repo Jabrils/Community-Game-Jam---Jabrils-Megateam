@@ -708,6 +708,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88de429c1081f17408abefe55fbdfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feet: 0.65
+  player: {fileID: 1511417021}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!4 &531218979
 Transform:
   m_ObjectHideFlags: 0
@@ -881,7 +886,7 @@ GameObject:
   - component: {fileID: 804195312}
   - component: {fileID: 804195311}
   - component: {fileID: 804195310}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2111,7 +2116,7 @@ GameObject:
   - component: {fileID: 2047154834}
   - component: {fileID: 2047154833}
   - component: {fileID: 2047154832}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
