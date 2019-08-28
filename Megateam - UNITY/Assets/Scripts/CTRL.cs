@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CTRL : MonoBehaviour
 {
-    GameObject player, chatbox;
+    public float feet;
+    public GameObject player;
+    public LayerMask GroundLayer;
+    GameObject chatbox;
     Rigidbody playerRB;
     Vector3 camOffset;
     public static DialogueTimeline currentDialogue;
@@ -19,7 +22,7 @@ public class CTRL : MonoBehaviour
         mainCam = Camera.main;
 
         // Get ref to our player
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
 
         // 
         chatbox = GameObject.Find("Chatting");
@@ -31,7 +34,7 @@ public class CTRL : MonoBehaviour
         // Get ref to our player's rigidbody
         playerRB = player.GetComponent<Rigidbody>();
 
-        camOffset = mainCam.transform.position/2;
+        camOffset = mainCam.transform.position / 2;
 
         GetAllBillBoardObjects();
     }
@@ -68,12 +71,20 @@ public class CTRL : MonoBehaviour
             // Press jump to make our player jump
             if (Input.GetButtonDown("Jump"))
             {
-                playerRB.AddForce(Vector3.up * 5, ForceMode.Impulse);
+                if(Physics.Raycast(player.transform.position + new Vector3(0,feet,0), Vector3.down, out RaycastHit hit, 0.25f, GroundLayer))
+                {
+                    playerRB.AddForce(Vector3.up * 5, ForceMode.Impulse);
+                }
+                /*Collider[] hits = Physics.OverlapBox(player.transform.position + new Vector3(0, feet.x, 0), new Vector3(feet.y, feet.z, feet.w), new Quaternion(0, 0, 0, 0), GroundLayer);
+                if (hits.Length > 0)
+                {
+                    
+                }*/
             }
         }
 
         // 
-        if(currentDialogue != null)
+        if (currentDialogue != null)
         {
             if (Input.GetKeyDown(KeyCode.Z) && currentDialogue.willTalk)
             {
@@ -127,6 +138,15 @@ public class CTRL : MonoBehaviour
             Vector3 camDir = (mainCam.transform.position - g.transform.position).normalized;
             //Rotates towards camera
             g.transform.eulerAngles = new Vector3(0, Quaternion.LookRotation(camDir, Vector3.up).eulerAngles.y, 0);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (player)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawCube(player.transform.position + new Vector3(0, feet, 0), new Vector3(0.05f, 0.05f, 0.05f));
         }
     }
 }
