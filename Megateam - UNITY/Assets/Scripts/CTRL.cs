@@ -112,14 +112,19 @@ public class CTRL : MonoBehaviour
         // for each object in billboard,
         foreach (GameObject g in billboard)
         {
-            // we need a reference to the main camera's position so we can modify it, we don't want the objects to rotate on the y axis
+            /*// we need a reference to the main camera's position so we can modify it, we don't want the objects to rotate on the y axis
             Vector3 dontChangeY = mainCam.transform.position;
 
             // here we use the main camera's position, but force the y to be 0, so y rotation on our billboards never changes
             dontChangeY.y = 0;
 
             // now make them look at the new modified main camera's position
-            g.transform.LookAt(dontChangeY);
+            g.transform.LookAt(dontChangeY);*/
+
+            //Gets direction towards camera
+            Vector3 camDir = (mainCam.transform.position - g.transform.position).normalized;
+            //Rotates towards camera
+            g.transform.eulerAngles = new Vector3(0, Quaternion.LookRotation(camDir, Vector3.up).eulerAngles.y, 0);
         }
     }
 }
