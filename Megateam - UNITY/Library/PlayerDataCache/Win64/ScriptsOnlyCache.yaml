@@ -1,9 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - CTRL
     - CamCTRL
     - NPC
+    - Readme
     - Talker
     - photo
     Unity.Postprocessing.Runtime.dll:
@@ -79,6 +82,8 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
       Script: {instanceID: 9334}
     - Class: 114
       Script: {instanceID: 9376}
@@ -101,27 +106,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10086}
     - Class: 114
-      Script: {instanceID: 10310}
+      Script: {instanceID: 10312}
     - Class: 114
-      Script: {instanceID: 10614}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 10618}
     - Class: 114
-      Script: {instanceID: 11008}
+      Script: {instanceID: 10668}
     - Class: 114
-      Script: {instanceID: 11022}
+      Script: {instanceID: 11012}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11026}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 17894}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 18454}
+      Script: {instanceID: 11770}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -729,6 +734,12 @@ ScriptsOnlyBuild:
     className: LightweightRenderPipelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CamCTRL
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -741,7 +752,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: df84854bc30795fda83c6ed850b9f190
+      Hash: a6f9c11975f243e812b1cfd50dffbd6f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Talker
@@ -909,6 +920,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: photo
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -961,18 +978,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: photo
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CamCTRL
   platform: 19
   scenePathNames:
   - Assets/Scenes/main.unity

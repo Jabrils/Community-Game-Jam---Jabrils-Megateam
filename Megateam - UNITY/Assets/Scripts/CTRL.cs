@@ -7,7 +7,7 @@ public class CTRL : MonoBehaviour
     GameObject player, chatbox;
     Rigidbody playerRB;
     Vector3 camOffset;
-    public static Dialogue[] currentDialogue;
+    public static DialogueTimeline currentDialogue;
 
     Camera mainCam;
     List<GameObject> billboard = new List<GameObject>();
@@ -72,9 +72,23 @@ public class CTRL : MonoBehaviour
             }
         }
 
-        if (currentDialogue != null && Input.GetKeyDown(KeyCode.Z))
+        // 
+        if (Input.GetKeyDown(KeyCode.Z) && currentDialogue.willTalk)
         {
-            DialogueSystem.Chat(currentDialogue);
+            int which = -1;
+
+            for (int i = 0; i < currentDialogue.convo.Length; i++)
+            {
+                if (currentDialogue.convo[i].match == currentDialogue.progress)
+                {
+                    which = i;
+                }
+            }
+
+            if (which >= 0)
+            {
+                DialogueSystem.Chat(currentDialogue.convo[which].lines, currentDialogue.convo[which].action);
+            }
         }
 
     }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TTOM_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  match: 1
+  lines:
+  - mugshot: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824, type: 3}
+    dia: Red coat told me to talk to you.
+  - mugshot: {fileID: 21300000, guid: 6ac1241c07c623546b2aa14003aaa31e, type: 3}
+    dia: Oh did he ey?
+  - mugshot: {fileID: 21300000, guid: 6ac1241c07c623546b2aa14003aaa31e, type: 3}
+    dia: What a strange young man.
+  - mugshot: {fileID: 21300000, guid: 6ac1241c07c623546b2aa14003aaa31e, type: 3}
+    dia: Never the less, here you are.
+  action:
+    quest: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0, type: 2}
+    progressTo: 2

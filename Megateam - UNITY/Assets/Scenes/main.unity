@@ -194,6 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
         type: 3}
+      propertyPath: dTimeline.convo.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
       propertyPath: talk1.Array.data[0].dia
       value: What to hear something?
       objectReference: {fileID: 0}
@@ -248,6 +253,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 446e64e31b9cf6b4dbaaefb12d71019c,
         type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ad36c1ae6598c394980545be260dbb3d,
+        type: 2}
     - target: {fileID: 309303638, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
       propertyPath: characterSpr
       value: 
@@ -1805,6 +1816,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: fffe53ea38f0a1247a32606a7a7ddcca,
         type: 3}
+    - target: {fileID: 309303638, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
+      propertyPath: characterSpr
+      value: 
+      objectReference: {fileID: 21300000, guid: fffe53ea38f0a1247a32606a7a7ddcca,
+        type: 3}
     - target: {fileID: 595052339338793592, guid: 331c9c69bfc3b9b44914281caed929a2,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1815,11 +1831,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.33
       objectReference: {fileID: 0}
-    - target: {fileID: 309303638, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
-      propertyPath: characterSpr
-      value: 
-      objectReference: {fileID: 21300000, guid: fffe53ea38f0a1247a32606a7a7ddcca,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
 --- !u!1 &1880904823
@@ -2251,6 +2262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
         type: 3}
+      propertyPath: dTimeline.convo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
       propertyPath: talk1.Array.data[0].dia
       value: This is my dog.
       objectReference: {fileID: 0}
@@ -2270,16 +2286,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6ac1241c07c623546b2aa14003aaa31e,
         type: 3}
-    - target: {fileID: 595052339338793543, guid: 331c9c69bfc3b9b44914281caed929a2,
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
         type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
+      propertyPath: dTimeline.convo.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bff6a278dd574b40bd223f00d8823ec,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e5399fa77ef546439935324ebde61f4,
+        type: 2}
     - target: {fileID: 309303638, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
       propertyPath: characterSpr
       value: 
       objectReference: {fileID: 21300000, guid: 6ac1241c07c623546b2aa14003aaa31e,
         type: 3}
+    - target: {fileID: 595052339338793543, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
 --- !u!1 &2138677391
@@ -2442,6 +2476,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
         type: 3}
+      propertyPath: dTimeline.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[0].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
       propertyPath: talk1.Array.data[0].mugshot
       value: 
       objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
@@ -2470,6 +2549,269 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
         type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.lines.Array.data[0].dia
+      value: Haha we've switched systems
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.lines.Array.data[1].dia
+      value: Bummer
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.lines.Array.data[0].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.lines.Array.data[1].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[0].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[0].dia
+      value: Yo can you do me a favor?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[1].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[1].dia
+      value: What's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[2].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[2].dia
+      value: Can you go talk to the old guy?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[3].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[3].dia
+      value: Please?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[4].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[4].dia
+      value: Then report back to me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[5].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].lines.Array.data[5].dia
+      value: Fine. Sure.
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].id
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].lines.Array.data[0].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].lines.Array.data[0].dia
+      value: Oh wow you did it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].lines.Array.data[1].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[1].lines.Array.data[1].dia
+      value: Thanks man!
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].action.quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].action.task
+      value: Talk To Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].action.progressTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].lines.Array.data[0].dia
+      value: Yo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].lines.Array.data[1].dia
+      value: Go Talk To old man
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].lines.Array.data[1].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].lines.Array.data[0].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].action.quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].action.task
+      value: Talk To Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[0].action.progressTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].lines.Array.data[0].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].lines.Array.data[0].dia
+      value: What are you waiting for?
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].lines.Array.data[1].mugshot
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605,
+        type: 3}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].lines.Array.data[1].dia
+      value: Go Talk To old man
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].action.quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].action.task
+      value: Talk To Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].action.progressTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.Array.data[0].convo.Array.data[1].match
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[0].lines.Array.data[0].dia
+      value: Yo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[0].lines.Array.data[1].dia
+      value: Go Talk to the old man for me
+      objectReference: {fileID: 0}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 449979ba835ba1b4da9bdfd6a2eb65d5,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 99ce8fbce79831541a41e5235a4fa867,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 13b309470c66878479f985b9a979ed83,
+        type: 2}
+    - target: {fileID: 595052339338793542, guid: 331c9c69bfc3b9b44914281caed929a2,
+        type: 3}
+      propertyPath: dTimeline.convo.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 48361dba446aee24f9f52479338b5e2f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331c9c69bfc3b9b44914281caed929a2, type: 3}
 --- !u!114 &1537229193505482894
@@ -2484,9 +2826,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9db8c4730df14542963fea2a87afac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talk1:
-  - mugshot: {fileID: 21300000, guid: cea79dc6e9bb7b646885bc1d89fe6e50, type: 3}
-    dia: Woof! Woof!
+  dTimeline:
+    quest: {fileID: 0}
+    convo: []
 --- !u!136 &1537229193505482895
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2558,7 +2900,7 @@ BoxCollider:
   m_GameObject: {fileID: 1537229193846778956}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 0.19}
   m_Center: {x: 0, y: 1.5, z: 0}

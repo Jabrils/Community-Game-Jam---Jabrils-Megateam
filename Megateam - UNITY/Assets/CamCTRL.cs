@@ -22,6 +22,7 @@ public class CamCTRL : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
+            transform.position = new Vector3(target.transform.position.x + Mathf.Sin(camRadians[ccInd]) * (3 + camHeight), 3 + ((camHeight / 7) * 2), target.transform.position.z + Mathf.Cos(camRadians[ccInd]) * (3 + camHeight));
     }
 
     // Update is called once per frame

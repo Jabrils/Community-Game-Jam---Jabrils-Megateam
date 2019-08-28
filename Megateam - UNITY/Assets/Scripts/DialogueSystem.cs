@@ -25,7 +25,7 @@ public static class DialogueSystem
         caret = allImgsInChatbox[2];
     }
 
-    public static void Chat(Dialogue[] d)
+    public static void Chat(Dialogue[] d, Action action)
     {
         // 
         if (state == State.Finished)
@@ -45,6 +45,13 @@ public static class DialogueSystem
         {
             state = State.Finished;
             chatbox.SetActive(false);
+
+            // 
+            if (action.quest != null)
+            {
+                action.quest.progress = action.progressTo;
+            }
+
             return;
         }
 
@@ -72,4 +79,21 @@ public class Dialogue
         this.mugshot = spr;
         this.dia = dia;
     }
+}
+
+[System.Serializable]
+public class DialogueTimeline
+{
+    public int progress { get { return quest == null ? 0 : quest.progress; }}
+    public bool willTalk { get { return convo.Length > 0; } }
+    public Quest quest;
+    public Conversation[] convo;
+}
+
+[CreateAssetMenu(fileName = "Conversation", menuName = "Story/Conversation", order = 1)]
+public class Conversation : ScriptableObject
+{
+    public int match;
+    public Dialogue[] lines;
+    public Action action;
 }

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TTOM_0
+  m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  match: 0
+  lines:
+  - mugshot: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605, type: 3}
+    dia: Yo! Can you do a favor for me?
+  - mugshot: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605, type: 3}
+    dia: Please?
+  - mugshot: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824, type: 3}
+    dia: Ugh
+  - mugshot: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605, type: 3}
+    dia: Can you go talk to the old man for me please?
+  - mugshot: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605, type: 3}
+    dia: When you're done report back to me.
+  - mugshot: {fileID: 21300000, guid: 7599020659c49904a8bc2e746af32824, type: 3}
+    dia: Fine.
+  action:
+    quest: {fileID: 11400000, guid: 05a6e206ddf65184eae9176caeb048c0, type: 2}
+    progressTo: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Talker : MonoBehaviour
 {
-    public Dialogue[] talk1;
+    public DialogueTimeline dTimeline;
     GameObject focalReticle;
 
     void Start()
@@ -14,10 +14,23 @@ public class Talker : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (dTimeline.willTalk && other.tag == "Player")
         {
-            CTRL.currentDialogue = talk1;
-            focalReticle.transform.position = transform.parent.position + (Vector3.up * 3);
+            int which = -1;
+
+            for (int i = 0; i < dTimeline.convo.Length; i++)
+            {
+                if (dTimeline.convo[i].match == dTimeline.progress)
+                {
+                    which = i;
+                }
+            }
+
+            if (which >= 0)
+            {
+                CTRL.currentDialogue = dTimeline;
+                focalReticle.transform.position = transform.parent.position + (Vector3.up * 3);
+            }
         }
     }
 

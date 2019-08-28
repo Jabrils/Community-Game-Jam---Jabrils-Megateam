@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TTOM_3
+  m_EditorClassIdentifier: Assembly-CSharp::Conversation
+  match: 3
+  lines:
+  - mugshot: {fileID: 21300000, guid: 14ba2c43aa0472f4584121c985b52605, type: 3}
+    dia: Thanks again, you're my hero
+  action:
+    quest: {fileID: 0}
+    progressTo: 0
