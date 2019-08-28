@@ -32,7 +32,7 @@ public class CamCTRL : MonoBehaviour
 
         camHeight = Mathf.Clamp(camHeight, 0, 7);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1_1"))
         {
             timer = 0;
 
@@ -41,6 +41,17 @@ public class CamCTRL : MonoBehaviour
             if (ccInd >= camRadians.Length)
             {
                 ccInd = 0;
+            }
+        }
+        if (Input.GetButtonDown("Fire1_2"))
+        {
+            timer = 0;
+
+            ccInd--;
+
+            if (ccInd < 0)
+            {
+                ccInd = camRadians.Length-1;
             }
         }
 
