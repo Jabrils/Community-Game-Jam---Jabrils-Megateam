@@ -2111,7 +2111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88de429c1081f17408abefe55fbdfd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feet: 0.65
+  feet: {x: 0.6, y: 0.4, z: 0.2, w: 0.05}
+  WalkSpeed: 150
+  RunSpeed: 225
+  JumpForce: 5
   player: {fileID: 1511417021}
   GroundLayer:
     serializedVersion: 2
@@ -4835,7 +4838,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511417021}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9b6d10634fda47a46a67398d9c95bf01, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

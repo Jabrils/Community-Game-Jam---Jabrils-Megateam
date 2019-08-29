@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CTRL : MonoBehaviour
 {
-    public float feet;
+    public Vector4 feet;
+    public float WalkSpeed = 150;
+    public float RunSpeed = 225;
+    public float JumpForce = 5;
     public GameObject player;
     public LayerMask GroundLayer;
     GameObject chatbox;
@@ -57,32 +60,33 @@ public class CTRL : MonoBehaviour
     void PlayerControls()
     {
         // use speed to scale up or down our speed
-        float spd = Input.GetButton("Fire3") ? 7f : 3f;
+        float spd = Input.GetButton("Fire3") ? RunSpeed : WalkSpeed;
 
         // get a ref to movement, using the player's directions right & forward, but the inverse of that since the player is facing the inverse direction of the camera by looking at it, then scale that by the horizontal & vertical inputs, as well as speed & deltatime
-        Vector3 move = (-player.transform.right * Input.GetAxis("Horizontal") - player.transform.forward * Input.GetAxis("Vertical")) * Time.deltaTime * spd; ;
+        Vector3 move = (player.transform.forward * -Input.GetAxisRaw("Vertical") + player.transform.right * -Input.GetAxisRaw("Horizontal")).normalized;
+
+        playerRB.velocity = new Vector3(playerRB.velocity.x * 0.5f, playerRB.velocity.y, playerRB.velocity.z * 0.5f);
 
         // If we aren't chatting
         if (DialogueSystem.state == DialogueSystem.State.Finished)
         {
             // Move our player's rigidbody
-            playerRB.MovePosition(playerRB.position + move);
+            playerRB.AddForce(move * spd * Time.deltaTime, ForceMode.VelocityChange);
 
             // Press jump to make our player jump
             if (Input.GetButtonDown("Jump"))
             {
-                if(Physics.Raycast(player.transform.position + new Vector3(0,feet,0), Vector3.down, out RaycastHit hit, 0.25f, GroundLayer))
+                /*if(Physics.Raycast(player.transform.position + new Vector3(0,feet,0), Vector3.down, out RaycastHit hit, 0.25f, GroundLayer))
                 {
-                    playerRB.AddForce(Vector3.up * 5, ForceMode.Impulse);
-                }
-                /*Collider[] hits = Physics.OverlapBox(player.transform.position + new Vector3(0, feet.x, 0), new Vector3(feet.y, feet.z, feet.w), new Quaternion(0, 0, 0, 0), GroundLayer);
+                    playerRB.AddForce(Vector3.up * JumpForce , ForceMode.Impulse);
+                }*/
+                Collider[] hits = Physics.OverlapBox(player.transform.position + new Vector3(0, feet.x, 0), new Vector3(feet.y, feet.z, feet.w), player.transform.rotation, GroundLayer);
                 if (hits.Length > 0)
                 {
-                    
-                }*/
+                    playerRB.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+                }
             }
         }
-
         // 
         if (currentDialogue != null)
         {
@@ -146,7 +150,7 @@ public class CTRL : MonoBehaviour
         if (player)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawCube(player.transform.position + new Vector3(0, feet, 0), new Vector3(0.05f, 0.05f, 0.05f));
+            Gizmos.DrawCube(player.transform.position + new Vector3(0, feet.x, 0), new Vector3(feet.y, feet.z, feet.w));
         }
     }
 }
