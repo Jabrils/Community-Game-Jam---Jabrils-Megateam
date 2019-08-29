@@ -13,6 +13,12 @@ public class Item : ScriptableObject
 
     public Item DeepCopy()
     {
-        return MemberwiseClone() as Item;
+        Item temp = new Item();
+        temp.ItemImage = ItemImage;
+        temp.ItemName = ItemName;
+        temp.IsStackable = IsStackable;
+        temp.MaxStack = MaxStack;
+        temp.CurrentStack = CurrentStack;
+        return temp;
     }
 }
